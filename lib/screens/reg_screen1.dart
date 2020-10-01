@@ -52,6 +52,9 @@ class _RegScreen1State extends State<RegScreen1> {
                           fontStyle: FontStyle.normal
                       ),
                     ),
+                    SizedBox(
+                      height: 60,
+                    ),
                     LoginRegInputField(
                       hintText: "Your Name",
                       onChanged: (value) {},

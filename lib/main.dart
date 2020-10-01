@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         //brightness: Brightness.light,
         fontFamily: 'Cerebri Sans',
       ),
-      home: RegScreen3(),
+      home: WelcomeScreen(),
 //      initialRoute: WelcomeScreen.id,
 //      routes: {
 //        WelcomeScreen.id: (context) => WelcomeScreen(),
