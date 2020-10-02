@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:sex_ed/screens/reg_screen3.dart';
 import 'package:sex_ed/ui_utils/bottom_reg_button.dart';
 import 'package:sex_ed/ui_utils/constants.dart';
 import 'package:sex_ed/ui_utils/role_reg_input_field.dart';
@@ -140,22 +142,25 @@ class _RegScreen2State extends State<RegScreen2> {
                     ),
                     BottomRegButton(
                       buttonTitle: "CONTINUE",
-                      onPressed: () {},
+                      onPressed: () {Navigator.pushNamed(context, RegScreen3.id);},
                     ),
                     SizedBox(
                       height: 10,
                     ),
                     Container(
                       alignment: Alignment.center,
-                      child: Text(
-                        "Cancel",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
+                      child: RichText(
+                        text: TextSpan(
+                          text: "Cancel",
+                          style: TextStyle(
                             fontStyle: FontStyle.normal,
                             fontSize: 18.0,
-                            color: kAuthPurpleColor
+                            color: kAuthPurpleColor,
+                            decoration: TextDecoration.underline,
+                          ),
+                          recognizer: TapGestureRecognizer()..onTap = ()=>Navigator.pop(context),
                         ),
-                      ),
+                      )
                     )
                   ],
                 )

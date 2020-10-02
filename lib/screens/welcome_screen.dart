@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:sex_ed/screens/login_screen.dart';
+import 'package:sex_ed/screens/reg_screen1.dart';
 import 'package:sex_ed/ui_utils/constants.dart';
 import 'package:sex_ed/ui_utils/bottom_reg_button.dart';
 
@@ -54,19 +57,47 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           fontSize: 20,
                         ),
                       ),
-                      BottomRegButton(buttonTitle: "Getting Started", onPressed: () {}),
+                      BottomRegButton(
+                          buttonTitle: "Getting Started",
+                          onPressed: () {Navigator.pushNamed(context, RegScreen1.id);}
+                          ),
                       SizedBox(
                         height: 10,
                       ),
                       Align(
                         alignment: Alignment.center,
-                        child: Text(
-                          "Already have an account? Log in",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w400
+                        child: RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: "Already have an account? ",
+                                style: TextStyle(
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xFF7C7B7A),
+                                )
+                              ),
+                              TextSpan(
+                                text: "Log In.",
+                                style: TextStyle(
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.black,
+                                  decoration: TextDecoration.underline,
+                                ),
+                                recognizer: TapGestureRecognizer()..onTap = ()=>Navigator.pushNamed(context, LoginScreen.id),
+                              )
+                            ]
                           ),
+
+//                          "Already have an account? Log in",
+//                          textAlign: TextAlign.center,
+//                          style: TextStyle(
+//                            fontSize: 16.0,
+//                            fontWeight: FontWeight.w400
+//                          ),
                         ),
                       )
                     ],
