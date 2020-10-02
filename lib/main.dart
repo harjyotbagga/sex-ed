@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sex_ed/screens/welcome_screen.dart';
-import 'package:sex_ed/screens/reg_screen1.dart';
-import 'package:sex_ed/screens/reg_screen2.dart';
-import 'package:sex_ed/screens/reg_screen3.dart';
+import 'package:sex_ed/screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,11 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         //brightness: Brightness.light,
         fontFamily: 'Cerebri Sans',
       ),
-      home: WelcomeScreen(),
+      home: HomeScreen(),
 //      initialRoute: WelcomeScreen.id,
 //      routes: {
 //        WelcomeScreen.id: (context) => WelcomeScreen(),
