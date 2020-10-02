@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:sex_ed/ui_utils/constants.dart';
 import 'package:sex_ed/ui_utils/login_reg_input_field.dart';
@@ -87,15 +88,18 @@ class _RegScreen3State extends State<RegScreen3> {
                     ),
                     Container(
                       alignment: Alignment.center,
-                      child: Text(
-                        "Cancel",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
+                      child: RichText(
+                        text: TextSpan(
+                          text: "Cancel",
+                          style: TextStyle(
                             fontStyle: FontStyle.normal,
                             fontSize: 18.0,
-                            color: kAuthPurpleColor
+                            color: kAuthPurpleColor,
+                            decoration: TextDecoration.underline,
+                          ),
+                          recognizer: TapGestureRecognizer()..onTap = ()=>Navigator.pop(context),
                         ),
-                      ),
+                      )
                     )
                   ],
                 ),

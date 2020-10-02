@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:sex_ed/screens/reg_screen2.dart';
 import 'package:sex_ed/ui_utils/constants.dart';
 import 'package:sex_ed/ui_utils/login_reg_input_field.dart';
 import 'package:sex_ed/ui_utils/bottom_reg_button.dart';
@@ -18,8 +20,8 @@ class _RegScreen1State extends State<RegScreen1> {
     double device_height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Center(
-        child: Container(
-          height: device_height,
+    child: Container(
+      height: device_height,
           width: device_width,
           decoration: kBackgroundDecor,
           child: SafeArea(
@@ -108,21 +110,24 @@ class _RegScreen1State extends State<RegScreen1> {
                     ),
                     BottomRegButton(
                       buttonTitle: "CONTINUE",
-                      onPressed: () {},
+                      onPressed: () {Navigator.pushNamed(context, RegScreen2.id);},
                     ),
                     SizedBox(
                       height: 10,
                     ),
                     Container(
                       alignment: Alignment.center,
-                      child: Text(
-                        "Cancel",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontStyle: FontStyle.normal,
-                          fontSize: 18.0,
-                          color: kAuthPurpleColor
-                        ),
+                      child: RichText(
+                        text: TextSpan(
+                          text: "Cancel",
+                          style: TextStyle(
+                            fontStyle: FontStyle.normal,
+                            fontSize: 18.0,
+                            color: kAuthPurpleColor,
+                            decoration: TextDecoration.underline,
+                          ),
+                          recognizer: TapGestureRecognizer()..onTap = ()=>Navigator.pop(context),
+                        )
                       ),
                     )
                   ],
