@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:sex_ed/ui_utils/bottom_reg_button.dart';
 import 'package:sex_ed/ui_utils/constants.dart';
 import 'package:sex_ed/ui_utils/login_reg_input_field.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class LoginScreen extends StatefulWidget {
   static String id = "login_screen";

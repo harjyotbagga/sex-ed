@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:sex_ed/screens/home_screen.dart';
 import 'package:sex_ed/ui_utils/constants.dart';
 import 'package:sex_ed/ui_utils/login_reg_input_field.dart';
 import 'package:sex_ed/ui_utils/bottom_reg_button.dart';
@@ -81,7 +82,7 @@ class _RegScreen3State extends State<RegScreen3> {
                     ),
                     BottomRegButton(
                       buttonTitle: "CONTINUE",
-                      onPressed: () {},
+                      onPressed: () {Navigator.pushNamed(context, HomeScreen.id);},
                     ),
                     SizedBox(
                       height: 10,
