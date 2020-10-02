@@ -155,8 +155,7 @@ class _RegScreen2State extends State<RegScreen2> {
                           style: TextStyle(
                             fontStyle: FontStyle.normal,
                             fontSize: 18.0,
-                            color: kAuthPurpleColor,
-                            decoration: TextDecoration.underline,
+                            color: kAuthPurpleColor
                           ),
                           recognizer: TapGestureRecognizer()..onTap = ()=>Navigator.pop(context),
                         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sex_ed/screens/home_screen.dart';
 import 'package:sex_ed/screens/login_screen.dart';
+import 'package:sex_ed/screens/quiz_screen.dart';
 import 'package:sex_ed/screens/splash_screen.dart';
 import 'package:sex_ed/screens/welcome_screen.dart';
 import 'package:sex_ed/screens/reg_screen1.dart';
@@ -18,8 +19,7 @@ class SexEdApp extends StatelessWidget {
         //brightness: Brightness.light,
         fontFamily: 'Cerebri Sans',
       ),
-//      home: WelcomeScreen(),
-      initialRoute: WelcomeScreen.id,
+      initialRoute: QuizScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
         RegScreen1.id: (context) => RegScreen1(),
@@ -28,6 +28,7 @@ class SexEdApp extends StatelessWidget {
         LoginScreen.id: (context) => LoginScreen(),
         SplashScreen.id: (context) => SplashScreen(),
         HomeScreen.id: (context) => HomeScreen(),
+        QuizScreen.id: (context) => QuizScreen(),
       },
     );
   }

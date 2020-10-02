@@ -15,3 +15,7 @@ const kBackgroundDecor = BoxDecoration(
 const kButtonColor = Color(0xFF616AD2);
 const kAuthPurpleColor = Color(0xFF6D75E9);
 const kLogoColor = Color(0xFFEB5757);
+
+const kPrimaryContentColor = Color(0xFF131313);
+const kSecondaryContentColor = Color(0xFF5A5958);
+const kTertiaryContentColor = Color(0xFF616AD2);
