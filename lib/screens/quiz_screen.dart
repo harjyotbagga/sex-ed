@@ -62,7 +62,7 @@ class _QuizScreenState extends State<QuizScreen> {
                           ),
                           QuizContentTextBlock(
                               contentText: "Sexual Orientation",
-                              fontSize: 16.0,
+                              fontSize: 22.0,
                               fontColor: kPrimaryContentColor,
                               fontweight: FontWeight.w500
                           ),
