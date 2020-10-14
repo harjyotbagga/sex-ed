@@ -52,7 +52,7 @@ Age: 19-22 years
 
 > *Question : Would you want your child to receive sex education from an organisation? (For children of 10 years and above)*
 
-![alt text](https://github.com/harjyotbagga/SexEd/blob/dev/CaseStudyAssets/ans5.png)
+![alt text](https://github.com/harjyotbagga/sex-ed/blob/dev/CaseStudyAssets/ans5.png)
 
 # Topic List
 
@@ -75,7 +75,7 @@ After conducting the survey, we have arrived at these topics:
 
 ## Strategy
 
-![alt text](https://github.com/harjyotbagga/SexEd/blob/dev/CaseStudyAssets/stratergy.png)
+![alt text](https://github.com/harjyotbagga/sex-ed/blob/dev/CaseStudyAssets/stratergy.png)
 
 ## Keeping the strategy, survey and target audience in the account, these are the two resources to successfully assist the students.
 
